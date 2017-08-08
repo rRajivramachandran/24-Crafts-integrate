@@ -5,22 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@mipmap/wall"
-    tools:context="com.example.iyashwant.spiderprojectprototype.signup4">
+    tools:context="com.example.iyashwant.spiderprojectprototype.signup4"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="16sp"
-        android:paddingRight="16sp"
-        android:paddingTop="16sp"
-        android:paddingBottom="0sp">
+        android:paddingLeft="5sp"
+        android:paddingRight="5sp"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_marginTop="30sp"
-            android:layout_height="match_parent">
-
-
+            android:layout_height="match_parent"
+            android:paddingTop="20sp">
 
             <ImageView
                 android:layout_width="150sp"
@@ -28,7 +28,6 @@
                 android:background="#30ffffff"
                 android:id="@+id/imageView"
                 android:layout_below="@+id/textView5"
-                android:layout_alignParentStart="true"
                 android:layout_marginTop="27dp" />
 
             <LinearLayout
@@ -37,26 +36,26 @@
                 android:layout_marginLeft="10sp"
                 android:orientation="vertical"
                 android:weightSum="1"
-                android:layout_alignParentEnd="true"
-                android:layout_toEndOf="@+id/imageView"
+                android:layout_toRightOf="@+id/imageView"
                 android:layout_alignTop="@+id/imageView">
 
                 <TextView
                     android:layout_width="120sp"
                     android:layout_height="30sp"
-                    android:gravity="center_horizontal"
+                    android:gravity="center"
                     android:textSize="30sp"
                     android:text="Actor"
-                    android:layout_gravity="center_horizontal"/>
+                    android:layout_gravity="center" />
 
-                <TextView
+                <me.grantland.widget.AutofitTextView
                     android:layout_width="wrap_content"
                     android:paddingLeft="10sp"
                     android:paddingRight="10sp"
-                    android:layout_height="30sp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="30sp"
                     android:text="Avinash Tadavarthy"
                     android:textSize="17sp"
+                    android:padding="5sp"
                     android:layout_gravity="center_horizontal"
                     android:gravity="center_vertical"
                     android:background="@drawable/bubble"/>
@@ -318,9 +317,8 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="360dp"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginLeft="29dp"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="10dp"
@@ -328,8 +326,10 @@
         android:gravity="center"
         android:layout_gravity="center_horizontal"
         android:text="Continue"
-
-        android:textColor="#ffff" />
+        android:layout_margin="5dp"
+        android:textColor="#000000"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -9,45 +9,41 @@
     xmlns:fab="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.iyashwant.spiderprojectprototype.Login2">
 
-
-
     <ImageView
-        android:layout_width="55dp"
-        android:layout_height="53dp"
+        android:layout_width="59dp"
+        android:layout_height="59dp"
         android:src="@drawable/facebook"
         android:id="@+id/imageView"
-        android:layout_marginLeft="87dp"
         android:clickable="true"
-
-        android:layout_marginStart="87dp"
-        android:layout_marginBottom="68dp"
+        android:layout_marginBottom="74dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
         android:layout_alignBottom="@+id/material_design_android_floating_action_menu"
-        />
+        android:layout_toLeftOf="@+id/material_design_android_floating_action_menu"
+        android:layout_toStartOf="@+id/material_design_android_floating_action_menu" />
 
     <ImageView
         android:layout_width="55dp"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:src="@drawable/google"
         android:clickable="true"
         android:id="@+id/imageView2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
         android:layout_alignBottom="@+id/imageView"
         android:layout_toRightOf="@+id/imageView"
-        android:layout_toEndOf="@+id/imageView"
-        android:layout_marginLeft="19dp"
-        android:layout_marginStart="19dp" />
+        android:layout_toEndOf="@+id/imageView" />
 
     <ImageView
         android:layout_width="55dp"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:clickable="true"
         android:src="@drawable/insta"
         android:id="@+id/imageView3"
-        android:layout_marginLeft="24dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginLeft="19dp"
         android:layout_alignTop="@+id/imageView2"
         android:layout_toRightOf="@+id/imageView2"
         android:layout_toEndOf="@+id/imageView2" />
-
 
 
 
@@ -129,7 +125,6 @@
             fab:fab_label="Exit App"
             fab:fab_size="normal" />
     </com.github.clans.fab.FloatingActionMenu>
-
 
 
 </RelativeLayout>

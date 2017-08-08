@@ -1,10 +1,14 @@
 package com.example.iyashwant.spiderprojectprototype;
 
 
+import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,9 +23,11 @@ import java.util.ArrayList;
 
 public class signup extends AppCompatActivity {
 
-   // String[] country = {"Who am I? ","Producer","director"};
-
-    String[] whoN={"Who am I? ","Actor","Actress","Music Director","Singer","Producer","Director","Co-Director"};
+    String[] whoN={"Who am I? ",
+            "Actor","Actress","Child Artist","Singer","Dancer",
+            "Side Artists","Assistant Director","Lyric Writer / Lyricist",
+            "Dialouge Writer","Script / Screenplay Writers", "Story Board Artist",
+            "Choreographer","Director of Photography"};
 
     String name;
 
@@ -32,12 +38,10 @@ public class signup extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        //Getting the instance of Spinner and applying OnItemSelectedListener on it
-        Spinner spin = (Spinner) findViewById(R.id.spinner);
-       // spin.setOnItemSelectedListener(ge);
 
+        Spinner craft = (Spinner) findViewById(R.id.spinner);
         CustomAdapterSpinner customAdapter=new CustomAdapterSpinner(getApplicationContext(),whoN);
-        spin.setAdapter(customAdapter);
+        craft.setAdapter(customAdapter);
 
 
         final EditText name1 =(EditText)findViewById(R.id.name1);
@@ -58,8 +62,33 @@ public class signup extends AppCompatActivity {
             }
         });
 
-
-
-
     }
+
+    //keyboard disappears when you click outside
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        View v = getCurrentFocus();
+
+        if (v != null &&
+                (ev.getAction() == MotionEvent.ACTION_UP || ev.getAction() == MotionEvent.ACTION_MOVE) &&
+                v instanceof EditText &&
+                !v.getClass().getName().startsWith("android.webkit.")) {
+            int scrcoords[] = new int[2];
+            v.getLocationOnScreen(scrcoords);
+            float x = ev.getRawX() + v.getLeft() - scrcoords[0];
+            float y = ev.getRawY() + v.getTop() - scrcoords[1];
+
+            if (x < v.getLeft() || x > v.getRight() || y < v.getTop() || y > v.getBottom())
+                hideKeyboard(this);
+        }
+        return super.dispatchTouchEvent(ev);
+    }
+
+    public static void hideKeyboard(Activity activity) {
+        if (activity != null && activity.getWindow() != null && activity.getWindow().getDecorView() != null) {
+            InputMethodManager imm = (InputMethodManager)activity.getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(activity.getWindow().getDecorView().getWindowToken(), 0);
+        }
+    }
+
 }

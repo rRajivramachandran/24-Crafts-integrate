@@ -16,13 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".signup" />
+        <activity android:name=".signup"/>
         <activity android:name=".Login" />
-
         <activity android:name=".signup2" />
         <activity android:name=".signup3" />
         <activity android:name=".signup4" />
-        <activity android:name=".Verification"></activity>
+        <activity android:name=".Verification"/>
 
 
  origin/master

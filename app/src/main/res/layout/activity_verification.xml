@@ -12,62 +12,64 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:paddingLeft="70dp"
-        android:layout_marginTop="100dp"
-        android:layout_height="100dp">
+        android:layout_marginTop="70dp"
+        android:layout_height="80dp">
+
         <ImageView
             android:layout_width="55dp"
             android:layout_height="53dp"
             android:src="@drawable/facebook"
             android:clickable="true"
-
-            />
-
-
+            android:layout_gravity="center_vertical"/>
 
         <TextView
+            android:id="@+id/textView6"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginLeft="40dp"
             android:text="Facebook"
-            android:textSize="20dp"
-            android:layout_marginTop="8dp"
-            android:layout_height="wrap_content" />
+            android:textSize="20dp" />
 
     </LinearLayout>
 
     <View
-        android:layout_marginBottom="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:layout_height="1dp"
         android:layout_gravity="center"
         android:layout_width="350dp"
         android:background="#9A9B9b"
         />
 
+
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:paddingLeft="70dp"
-        android:layout_height="100dp">
+        android:layout_height="80dp">
+
         <ImageView
             android:layout_width="55dp"
             android:layout_height="50dp"
             android:src="@drawable/google"
             android:clickable="true"
-
-           />
-
-
+            android:layout_gravity="center_vertical"/>
 
         <TextView
             android:layout_width="100dp"
             android:layout_marginLeft="40dp"
             android:text="Google +"
-            android:layout_marginTop="8dp"
+            android:layout_gravity="center_vertical"
             android:textSize="20dp"
             android:layout_height="wrap_content" />
 
     </LinearLayout>
 
     <View
-        android:layout_marginBottom="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:layout_height="1dp"
         android:layout_gravity="center"
         android:layout_width="350dp"
@@ -77,25 +79,29 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:paddingLeft="70dp"
-        android:layout_height="100dp">
+        android:layout_height="80dp">
+
         <ImageView
             android:layout_width="55dp"
             android:layout_height="50dp"
             android:clickable="true"
             android:src="@drawable/insta"
             android:id="@+id/imageView3"
-            />
+            android:layout_gravity="center_vertical"/>
+
         <TextView
             android:layout_width="100dp"
             android:layout_marginLeft="40dp"
             android:textSize="20dp"
             android:text="Instagram"
-            android:layout_marginTop="8dp"
+            android:layout_gravity="center_vertical"
             android:layout_height="wrap_content" />
 
     </LinearLayout>
+
     <View
-        android:layout_marginBottom="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:layout_height="1dp"
         android:layout_gravity="center"
         android:layout_width="350dp"
@@ -106,23 +112,21 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:paddingLeft="70dp"
-        android:layout_height="100dp">
+        android:layout_height="80dp">
 
         <ImageView
             android:layout_width="55dp"
             android:layout_height="50dp"
             android:clickable="true"
-
-            />
-
-       
+            android:src="@drawable/phone_img"
+            android:layout_gravity="center_vertical"/>
 
         <TextView
             android:layout_width="100dp"
             android:layout_marginLeft="40dp"
             android:textSize="20dp"
             android:text="Phone"
-            android:layout_marginTop="8dp"
+            android:layout_gravity="center_vertical"
             android:layout_height="wrap_content"  />
 
     </LinearLayout>

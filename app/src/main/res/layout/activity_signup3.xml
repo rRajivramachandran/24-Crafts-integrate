@@ -5,29 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@mipmap/wall"
-    tools:context="com.example.iyashwant.spiderprojectprototype.signup3">
+    tools:context="com.example.iyashwant.spiderprojectprototype.signup3"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-    >
+        android:layout_height="wrap_content">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:paddingLeft="16sp"
-            android:paddingRight="16sp"
-            android:paddingTop="16sp"
-            android:paddingBottom="0sp"
+            android:padding="10sp"
             android:layout_height="fill_parent">
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 android:textStyle="bold"
-                android:paddingLeft="19sp"
-                android:layout_marginTop="60sp"
+                android:layout_marginTop="30sp"
                 android:layout_alignParentTop="true"
                 android:text="Choose your answer:"
                 android:textSize="15sp"
@@ -47,7 +43,7 @@
                     android:text="Do you know how to sing?"
                     android:paddingLeft="20sp"
                     android:gravity="center_vertical"
-                    android:layout_weight="6.5"/>
+                    android:layout_weight="6"/>
 
                 <Space
                     android:layout_width="0sp"
@@ -56,7 +52,7 @@
 
                 <RadioGroup
                     android:layout_width="0sp"
-                    android:layout_weight="3"
+                    android:layout_weight="3.5"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
@@ -94,7 +90,7 @@
                     android:text="Do you know how to dance?"
                     android:paddingLeft="20sp"
                     android:gravity="center_vertical"
-                    android:layout_weight="6.5"/>
+                    android:layout_weight="6"/>
 
                 <Space
                     android:layout_width="0sp"
@@ -103,7 +99,7 @@
 
                 <RadioGroup
                     android:layout_width="0sp"
-                    android:layout_weight="3"
+                    android:layout_weight="3.5"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
@@ -141,7 +137,7 @@
                     android:text="Do you know how to swim?"
                     android:gravity="center_vertical"
                     android:paddingLeft="20sp"
-                    android:layout_weight="6.5"/>
+                    android:layout_weight="6"/>
 
                 <Space
                     android:layout_width="0sp"
@@ -150,7 +146,7 @@
 
                 <RadioGroup
                     android:layout_width="0sp"
-                    android:layout_weight="3"
+                    android:layout_weight="3.5"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
@@ -182,7 +178,7 @@
                 android:textStyle="bold"
                 android:textSize="15sp"
                 android:layout_below="@+id/swim"
-                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
                 android:layout_marginTop="20dp" />
 
             <EditText
@@ -195,7 +191,7 @@
                 android:padding="10sp"
                 android:background="@drawable/box"
                 android:layout_below="@+id/textView2"
-                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
                 android:layout_marginTop="14dp"
                 android:maxLength="250"
                 android:inputType="textCapSentences"/>
@@ -208,7 +204,7 @@
                 android:text="Previous Experience"
                 android:textStyle="bold"
                 android:layout_below="@+id/editText1"
-                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
                 android:layout_marginTop="20dp" />
 
             <EditText
@@ -221,7 +217,7 @@
                 android:padding="10sp"
                 android:background="@drawable/box"
                 android:layout_below="@+id/textView3"
-                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
                 android:layout_marginTop="14dp"
                 android:maxLength="250"
                 android:inputType="textCapSentences"/>
@@ -234,7 +230,7 @@
                 android:layout_below="@+id/editText2"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
                 android:layout_marginTop="20dp" />
 
             <EditText
@@ -247,26 +243,10 @@
                 android:id="@+id/textView5"
                 android:padding="10sp"
                 android:layout_below="@+id/textView4"
-                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
                 android:layout_marginTop="14dp"
                 android:maxLength="250"
                 android:inputType="textCapSentences"/>
-
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="360dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="10dp"
-                android:layout_below="@id/textView5"
-                android:layout_marginTop="40dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/button_round"
-                android:gravity="center"
-                android:layout_gravity="center_horizontal"
-                android:text="Next"
-
-                android:textColor="#ffff" />
 
         </RelativeLayout>
     </ScrollView>
@@ -317,8 +297,18 @@
             android:layout_weight="1"
             android:layout_height="match_parent" />
 
-
-
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_round"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text="Next"
+        android:textColor="#000000"
+        android:layout_margin="5dp" />
 
 </RelativeLayout>
