@@ -15,19 +15,19 @@ import android.widget.TextView;
 public class CustomAdapterSpinner extends BaseAdapter {
     Context context;
     
-    String[] WhoN;
+    String[] list;
     LayoutInflater inflter;
 
-    public CustomAdapterSpinner(Context applicationContext,String[] WhoN) {
+    public CustomAdapterSpinner(Context applicationContext,String[] list) {
         this.context = applicationContext;
       
-        this.WhoN = WhoN;
+        this.list = list;
         inflter = (LayoutInflater.from(applicationContext));
     }
 
     @Override
     public int getCount() {
-        return WhoN.length;
+        return list.length;
     }
 
     @Override
@@ -46,7 +46,7 @@ public class CustomAdapterSpinner extends BaseAdapter {
        // ImageView icon = (ImageView) view.findViewById(R.id.imageView);
         TextView names = (TextView) view.findViewById(R.id.spin_text);
        // icon.setImageResource(flags[i]);
-        names.setText(WhoN[i]);
+        names.setText(list[i]);
         return view;
     }
 }

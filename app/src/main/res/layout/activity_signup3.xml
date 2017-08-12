@@ -7,7 +7,8 @@
     android:background="@mipmap/wall"
     tools:context="com.example.iyashwant.spiderprojectprototype.signup3"
     android:focusable="true"
-    android:focusableInTouchMode="true">
+    android:focusableInTouchMode="true"
+    android:screenOrientation="portrait">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -30,143 +31,3520 @@
                 android:layout_marginBottom="10sp"/>
 
             <LinearLayout
-                android:id="@+id/sing"
+                android:id="@+id/questions"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_below="@id/textView"
-                android:orientation="horizontal"
-                android:weightSum="10">
+                android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="0sp"
-                    android:layout_height="match_parent"
-                    android:text="Do you know how to sing?"
-                    android:paddingLeft="20sp"
-                    android:gravity="center_vertical"
-                    android:layout_weight="6"/>
-
-                <Space
-                    android:layout_width="0sp"
-                    android:layout_weight=".5"
-                    android:layout_height="match_parent" />
-
-                <RadioGroup
-                    android:layout_width="0sp"
-                    android:layout_weight="3.5"
+                <!-- actor -->
+                <LinearLayout
+                    android:id="@+id/actor"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
-                    <RadioButton
-                        android:layout_width="wrap_content"
+                    <!-- dance -->
+                    <LinearLayout
+                        android:id="@+id/actor_1"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Yes"
-                        android:checked="false"
-                        android:scaleX="0.90"
-                        android:scaleY="0.90"/>
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:layout_marginBottom="5sp">
 
-                    <RadioButton
-                        android:layout_width="wrap_content"
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:text="Do you know how to dance?"
+                            android:paddingLeft="10sp"
+                            android:gravity="center_vertical"
+                            android:layout_weight="6"/>
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent" />
+
+                        <RadioGroup
+                            android:id="@+id/actor_1radio"
+                            android:layout_width="0sp"
+                            android:layout_weight="3.5"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/actor_1radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"/>
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/actor_11"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="If Yes, what styles"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+
+                    <!-- sing -->
+                    <LinearLayout
+                        android:id="@+id/actor_2"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="No"
-                        android:checked="false"
-                        android:scaleX="0.90"
-                        android:scaleY="0.90"/>
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:layout_marginBottom="5sp">
 
-                </RadioGroup>
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:text="Do you know how to sing?"
+                            android:paddingLeft="10sp"
+                            android:gravity="center_vertical"
+                            android:layout_weight="6"/>
 
-            </LinearLayout>
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent" />
 
-            <LinearLayout
-                android:id="@+id/dance"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/sing"
-                android:orientation="horizontal"
-                android:weightSum="10">
+                        <RadioGroup
+                            android:id="@+id/actor_2radio"
+                            android:layout_width="0sp"
+                            android:layout_weight="3.5"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="0sp"
-                    android:layout_height="match_parent"
-                    android:text="Do you know how to dance?"
-                    android:paddingLeft="20sp"
-                    android:gravity="center_vertical"
-                    android:layout_weight="6"/>
+                            <RadioButton
+                                android:id="@+id/actor_2radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
 
-                <Space
-                    android:layout_width="0sp"
-                    android:layout_weight=".5"
-                    android:layout_height="match_parent" />
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"/>
 
-                <RadioGroup
-                    android:layout_width="0sp"
-                    android:layout_weight="3.5"
+                        </RadioGroup>
+
+                    </LinearLayout>
+                    <EditText
+                        android:id="@+id/actor_22"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="If Yes, let us know"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+
+                    <!-- swim -->
+                    <LinearLayout
+                        android:id="@+id/actor_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5sp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:text="Do you know how to swim?"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:layout_weight="6"/>
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent" />
+
+                        <RadioGroup
+                            android:id="@+id/actor_3radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/actor_3radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <!-- sports -->
+                    <LinearLayout
+                        android:id="@+id/actor_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5sp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:text="Do you play any sports?"
+                            android:paddingLeft="10sp"
+                            android:gravity="center_vertical"
+                            android:layout_weight="6"/>
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent" />
+
+                        <RadioGroup
+                            android:id="@+id/actor_4radio"
+                            android:layout_width="0sp"
+                            android:layout_weight="3.5"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/actor_4radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"/>
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+                    <EditText
+                        android:id="@+id/actor_41"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="If Yes, what kind"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+
+                    <!-- passport -->
+                    <LinearLayout
+                        android:id="@+id/actor_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5sp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:text="Do you have a valid passport to travel?"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:layout_weight="6"/>
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent" />
+
+                        <RadioGroup
+                            android:id="@+id/actor_5radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/actor_5radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <!-- experience -->
+                    <LinearLayout
+                        android:id="@+id/actor_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5sp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:text="Have you had any prior acting experience?"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:layout_weight="6"/>
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent" />
+
+                        <RadioGroup
+                            android:id="@+id/actor_6radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/actor_6radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+                    <Spinner
+                        android:id="@+id/actor_61"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="If Yes, what kind"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+                    <EditText
+                        android:id="@+id/actor_62"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="List relevant names / Links"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+                </LinearLayout>
+
+                <!-- actress -->
+                <LinearLayout
+                    android:id="@+id/actress"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
-                    <RadioButton
-                        android:layout_width="wrap_content"
+                    <!-- dance -->
+                    <LinearLayout
+                        android:id="@+id/actress_1"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Yes"
-                        android:checked="false"
-                        android:scaleX="0.90"
-                        android:scaleY="0.90"/>
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:layout_marginBottom="5sp">
 
-                    <RadioButton
-                        android:layout_width="wrap_content"
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:text="Do you know how to dance?"
+                            android:paddingLeft="10sp"
+                            android:gravity="center_vertical"
+                            android:layout_weight="6"/>
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent" />
+
+                        <RadioGroup
+                            android:id="@+id/actress_1radio"
+                            android:layout_width="0sp"
+                            android:layout_weight="3.5"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/actress_1radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"/>
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+                    <EditText
+                        android:id="@+id/actress_11"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="If Yes, what styles"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+
+                    <!-- sing -->
+                    <LinearLayout
+                        android:id="@+id/actress_2"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="No"
-                        android:checked="false"
-                        android:scaleX="0.90"
-                        android:scaleY="0.90"/>
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:layout_marginBottom="5sp">
 
-                </RadioGroup>
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:text="Do you know how to sing?"
+                            android:paddingLeft="10sp"
+                            android:gravity="center_vertical"
+                            android:layout_weight="6"/>
 
-            </LinearLayout>
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/dance"
-                android:orientation="horizontal"
-                android:id="@+id/swim"
-                android:weightSum="10">
+                        <RadioGroup
+                            android:id="@+id/actress_2radio"
+                            android:layout_width="0sp"
+                            android:layout_weight="3.5"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="0sp"
-                    android:layout_height="match_parent"
-                    android:text="Do you know how to swim?"
-                    android:gravity="center_vertical"
-                    android:paddingLeft="20sp"
-                    android:layout_weight="6"/>
+                            <RadioButton
+                                android:id="@+id/actress_2radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
 
-                <Space
-                    android:layout_width="0sp"
-                    android:layout_weight=".5"
-                    android:layout_height="match_parent" />
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"/>
 
-                <RadioGroup
-                    android:layout_width="0sp"
-                    android:layout_weight="3.5"
+                        </RadioGroup>
+
+                    </LinearLayout>
+                    <EditText
+                        android:id="@+id/actress_22"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="If Yes, let us know"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+
+                    <!-- swim -->
+                    <LinearLayout
+                        android:id="@+id/actress_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5sp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:text="Do you know how to swim?"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:layout_weight="6"/>
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent" />
+
+                        <RadioGroup
+                            android:id="@+id/actress_3radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/actress_3radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <!-- sports -->
+                    <LinearLayout
+                        android:id="@+id/actress_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5sp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:text="Do you play any sports?"
+                            android:paddingLeft="10sp"
+                            android:gravity="center_vertical"
+                            android:layout_weight="6"/>
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent" />
+
+                        <RadioGroup
+                            android:id="@+id/actress_4radio"
+                            android:layout_width="0sp"
+                            android:layout_weight="3.5"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/actress_4radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"/>
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+                    <EditText
+                        android:id="@+id/actress_41"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="If Yes, what kind"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+
+                    <!-- passport -->
+                    <LinearLayout
+                        android:id="@+id/actress_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5sp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:text="Do you have a valid passport to travel?"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:layout_weight="6"/>
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent" />
+
+                        <RadioGroup
+                            android:id="@+id/actress_5radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/actress_5radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <!-- experience -->
+                    <LinearLayout
+                        android:id="@+id/actress_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5sp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:text="Have you had any prior acting experience?"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:layout_weight="6"/>
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent" />
+
+                        <RadioGroup
+                            android:id="@+id/actress_6radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/actress_6radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+                    <Spinner
+                        android:id="@+id/actress_61"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="If Yes, what kind"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+                    <EditText
+                        android:id="@+id/actress_62"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="List relevant names / Links"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+                </LinearLayout>
+
+                <!-- side -->
+                <LinearLayout
+                    android:id="@+id/side"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
-                    <RadioButton
+                    <!-- dance -->
+                    <LinearLayout
+                        android:id="@+id/side_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:layout_marginBottom="5sp">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:text="Do you know how to dance?"
+                            android:paddingLeft="10sp"
+                            android:gravity="center_vertical"
+                            android:layout_weight="6"/>
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent" />
+
+                        <RadioGroup
+                            android:id="@+id/side_1radio"
+                            android:layout_width="0sp"
+                            android:layout_weight="3.5"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/side_1radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"/>
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+                    <EditText
+                        android:id="@+id/side_11"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="If Yes, what styles"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+
+                    <!-- sing -->
+                    <LinearLayout
+                        android:id="@+id/side_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:layout_marginBottom="5sp">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:text="Do you know how to sing?"
+                            android:paddingLeft="10sp"
+                            android:gravity="center_vertical"
+                            android:layout_weight="6"/>
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent" />
+
+                        <RadioGroup
+                            android:id="@+id/side_2radio"
+                            android:layout_width="0sp"
+                            android:layout_weight="3.5"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/side_2radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"/>
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+                    <EditText
+                        android:id="@+id/side_22"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="If Yes, let us know"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+
+                    <!-- swim -->
+                    <LinearLayout
+                        android:id="@+id/side_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5sp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:text="Do you know how to swim?"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:layout_weight="6"/>
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent" />
+
+                        <RadioGroup
+                            android:id="@+id/side_3radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/side_3radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <!-- sports -->
+                    <LinearLayout
+                        android:id="@+id/side_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5sp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:text="Do you play any sports?"
+                            android:paddingLeft="10sp"
+                            android:gravity="center_vertical"
+                            android:layout_weight="6"/>
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent" />
+
+                        <RadioGroup
+                            android:id="@+id/side_4radio"
+                            android:layout_width="0sp"
+                            android:layout_weight="3.5"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/side_4radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"/>
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+                    <EditText
+                        android:id="@+id/side_41"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="If Yes, what kind"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+
+                    <!-- passport -->
+                    <LinearLayout
+                        android:id="@+id/side_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5sp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:text="Do you have a valid passport to travel?"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:layout_weight="6"/>
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent" />
+
+                        <RadioGroup
+                            android:id="@+id/side_5radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/side_5radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <!-- experience -->
+                    <LinearLayout
+                        android:id="@+id/side_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5sp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:text="Have you had any prior acting experience?"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:layout_weight="6"/>
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent" />
+
+                        <RadioGroup
+                            android:id="@+id/side_6radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/side_6radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+                    <Spinner
+                        android:id="@+id/side_61"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="If Yes, what kind"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+                    <EditText
+                        android:id="@+id/side_62"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="List relevant names / Links"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+                </LinearLayout>
+
+                <!-- child artist-->
+                <LinearLayout
+                    android:id="@+id/child"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!-- parent agreement -->
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Yes"
-                        android:checked="false"
-                        android:scaleX="0.90"
-                        android:scaleY="0.90"/>
+                        android:text="Dear Parent / Guardian of the child, kindly fill in the information below"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="20dp" />
+                    <EditText
+                        android:id="@+id/child_11"
 
-                    <RadioButton
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="16sp"
+                        android:layout_marginRight="16sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:layout_gravity="center"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        android:ems="10"
+                        android:hint="Parent / Guardian Name"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+                    <EditText
+                        android:id="@+id/child_12"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="16sp"
+                        android:layout_marginRight="16sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:layout_gravity="center"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        android:ems="10"
+                        android:hint="Contact Number"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="number"
+                        />
+                    <Spinner
+                        android:id="@+id/child_13"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/box"
+                        android:layout_width="match_parent"
+                        android:textSize="16dp"
+                        android:popupBackground="@drawable/box_spin"
+                        android:layout_gravity="center"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="16sp"
+                        android:layout_marginRight="16sp" />
+                    <!-- child sing -->
+                    <LinearLayout
+                        android:id="@+id/child_2"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="No"
-                        android:checked="false"
-                        android:scaleX="0.90"
-                        android:scaleY="0.90"/>
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:layout_marginBottom="5sp">
 
-                </RadioGroup>
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:text="Does the child know how to sing?"
+                            android:paddingLeft="10sp"
+                            android:gravity="center_vertical"
+                            android:layout_weight="6"/>
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent" />
+
+                        <RadioGroup
+                            android:id="@+id/child_2radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/child_2radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+                    <EditText
+                        android:id="@+id/child_21"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="If Yes, let us know"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+                    <!-- child dance -->
+                    <LinearLayout
+                        android:id="@+id/child_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:layout_marginBottom="5sp">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:text="Does the child know how to dance?"
+                            android:paddingLeft="10sp"
+                            android:gravity="center_vertical"
+                            android:layout_weight="6"/>
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent" />
+
+                        <RadioGroup
+                            android:id="@+id/child_3radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/child_3radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+                    <EditText
+                        android:id="@+id/child_31"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="If Yes, what styles"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+                    <!-- child exp -->
+                    <LinearLayout
+                        android:id="@+id/child_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5sp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:text="Does the child have any prior acting experience?"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:layout_weight="6"/>
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent" />
+
+                        <RadioGroup
+                            android:id="@+id/child_4radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/child_4radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+                    <Spinner
+                        android:id="@+id/child_41"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="If Yes, what kind"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+                    <EditText
+                        android:id="@+id/child_42"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="List relevant names / Links"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+                </LinearLayout>
+
+                <!-- singer -->
+                <LinearLayout
+                    android:id="@+id/singer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- own soundtrack -->
+                    <LinearLayout
+                        android:id="@+id/singer_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5sp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:text="Have you composed your own soundtracks?" />
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5" />
+
+                        <RadioGroup
+                            android:id="@+id/singer_1radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/singer_1radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/singer_11"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:background="@drawable/box"
+                        android:ems="10"
+                        android:hint="If Yes, upload links to the tracks"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="20dp"
+                        android:textColorHint="#ffffff"
+                        android:textSize="16dp" />
+
+                    <!-- own lyrics -->
+                    <LinearLayout
+                        android:id="@+id/singer_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5sp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:text="Have you composed your own lyrics?" />
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5" />
+
+                        <RadioGroup
+                            android:id="@+id/singer_2radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/singer_2radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/singer_21"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:background="@drawable/box"
+                        android:ems="10"
+                        android:hint="If Yes, upload links"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="20dp"
+                        android:textColorHint="#ffffff"
+                        android:textSize="16dp" />
+
+                    <!-- singing style -->
+                    <Spinner
+                        android:id="@+id/singer_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/box"
+                        android:popupBackground="@drawable/box_spin"
+                        android:textSize="16dp" />
+
+                    <!--  classical training -->
+                    <LinearLayout
+                        android:id="@+id/singer_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5sp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:text="Are you classically trained?" />
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5" />
+
+                        <RadioGroup
+                            android:id="@+id/singer_4radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/singer_4radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/singer_41"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:background="@drawable/box"
+                        android:ems="10"
+                        android:hint="If Yes, for how long?"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="20dp"
+                        android:textColorHint="#ffffff"
+                        android:textSize="16dp" />
+
+                    <!-- misc uploads -->
+                    <LinearLayout
+                        android:id="@+id/singer_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5sp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:text="Have you recorded any Smule Videos / Dubsmash Videos / your own renditions?" />
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5" />
+
+                        <RadioGroup
+                            android:id="@+id/singer_5radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/singer_5radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/singer_51"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:background="@drawable/box"
+                        android:ems="10"
+                        android:hint="If Yes, upload links"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="20dp"
+                        android:textColorHint="#ffffff"
+                        android:textSize="16dp" />
+
+                    <!-- performed -->
+                    <LinearLayout
+                        android:id="@+id/singer_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5sp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:text="Have you performed in any feature films / TV shows / Short Films?" />
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5" />
+
+                        <RadioGroup
+                            android:id="@+id/singer_6radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/singer_6radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/singer_61"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:background="@drawable/box"
+                        android:ems="10"
+                        android:hint="If Yes, list them and upload links"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="20dp"
+                        android:textColorHint="#ffffff"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <!-- dancer -->
+                <LinearLayout
+                    android:id="@+id/dancer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- own soundtrack -->
+                    <LinearLayout
+                        android:id="@+id/dancer_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5sp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:text="Have you composed your own soundtracks?" />
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5" />
+
+                        <RadioGroup
+                            android:id="@+id/dancer_1radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/dancer_1radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/dancer_11"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:background="@drawable/box"
+                        android:ems="10"
+                        android:hint="If Yes, upload links to the tracks"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="20dp"
+                        android:textColorHint="#ffffff"
+                        android:textSize="16dp" />
+
+                    <!-- own choreo -->
+                    <LinearLayout
+                        android:id="@+id/dancer_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5sp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:text="Have you composed your own Choreo?" />
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5" />
+
+                        <RadioGroup
+                            android:id="@+id/dancer_2radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/dancer_2radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/dancer_21"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:background="@drawable/box"
+                        android:ems="10"
+                        android:hint="If Yes, upload links"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="20dp"
+                        android:textColorHint="#ffffff"
+                        android:textSize="16dp" />
+
+                    <!-- dancing style -->
+                    <Spinner
+                        android:id="@+id/dancer_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/box"
+                        android:popupBackground="@drawable/box_spin"
+                        android:textSize="16dp" />
+
+                    <!-- dance trained -->
+                    <LinearLayout
+                        android:id="@+id/dancer_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5sp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:text="Are you trained / schooled?" />
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5" />
+
+                        <RadioGroup
+                            android:id="@+id/dancer_4radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/dancer_4radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/dancer_41"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:background="@drawable/box"
+                        android:ems="10"
+                        android:hint="Where and under whom?"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="20dp"
+                        android:textColorHint="#ffffff"
+                        android:textSize="16dp" />
+
+                    <!-- dance performed -->
+                    <LinearLayout
+                        android:id="@+id/dancer_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5sp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:text="Have you performed in any feature films / TV shows / Short Films?" />
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5" />
+
+                        <RadioGroup
+                            android:id="@+id/dancer_5radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/dancer_5radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <Spinner
+                        android:id="@+id/dancer_51"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:background="@drawable/box"
+                        android:ems="10"
+                        android:hint="If the performance was good upload links"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="20dp"
+                        android:textColorHint="#ffffff"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/dancer_52"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:background="@drawable/box"
+                        android:ems="10"
+                        android:hint="List relevant names / Links"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="20dp"
+                        android:textColorHint="#ffffff"
+                        android:textSize="16dp" />
+
+                    <!-- dance interest -->
+                    <Spinner
+                        android:id="@+id/dancer_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/box"
+                        android:popupBackground="@drawable/box_spin"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <!-- assistant director -->
+                <LinearLayout
+                    android:id="@+id/assdir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- previous work -->
+                    <LinearLayout
+                        android:id="@+id/assdir_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5sp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:text="Have you performed in any feature films / TV shows / Short Films?" />
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5" />
+
+                        <RadioGroup
+                            android:id="@+id/assdir_1radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/assdir_1radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/assdir_11"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:background="@drawable/box"
+                        android:ems="10"
+                        android:hint="Necessary titles and links?"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="20dp"
+                        android:textColorHint="#ffffff"
+                        android:textSize="16dp" />
+
+                    <!-- own movie -->
+                    <LinearLayout
+                        android:id="@+id/assdir_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5sp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:text="Have you directed your own movie / short film / ad?" />
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5" />
+
+                        <RadioGroup
+                            android:id="@+id/assdir_2radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/assdir_2radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/assdir_22"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:background="@drawable/box"
+                        android:ems="10"
+                        android:hint="Names and necessary links?"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="20dp"
+                        android:textColorHint="#ffffff"
+                        android:textSize="16dp" />
+
+                    <!-- seeking dir -->
+                    <LinearLayout
+                        android:id="@+id/assdir_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5sp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:text="Are you looking out for a director?" />
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5" />
+
+                        <RadioGroup
+                            android:id="@+id/assdir_3radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/assdir_3radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <!-- seeking cc -->
+                    <LinearLayout
+                        android:id="@+id/assdir_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5sp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:text="Are you looking out for cast and crew?" />
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5" />
+
+                        <RadioGroup
+                            android:id="@+id/assdir_4radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/assdir_4radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <!-- seeking prod -->
+                    <LinearLayout
+                        android:id="@+id/assdir_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5sp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:text="Are you looking out for a producer?" />
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5" />
+
+                        <RadioGroup
+                            android:id="@+id/assdir_5radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/assdir_5radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <!-- passport -->
+                    <LinearLayout
+                        android:id="@+id/assdir_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5sp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:text="Do you have a valid passport to travel?" />
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5" />
+
+                        <RadioGroup
+                            android:id="@+id/assdir_6radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/assdir_6radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- lyricist -->
+                <LinearLayout
+                    android:id="@+id/lyric"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- previous work -->
+                    <LinearLayout
+                        android:id="@+id/lyric_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5sp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:text="Have you performed in any feature films / TV shows / Short Films?" />
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5" />
+
+                        <RadioGroup
+                            android:id="@+id/lyric_1radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/lyric_1radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/lyric_11"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:background="@drawable/box"
+                        android:ems="10"
+                        android:hint="Necessary titles and links?"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="20dp"
+                        android:textColorHint="#ffffff"
+                        android:textSize="16dp" />
+
+                    <!-- languages -->
+                    <EditText
+                        android:id="@+id/lyric_12"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:background="@drawable/box"
+                        android:ems="10"
+                        android:hint="List of Languages you have/can written dialogues in?"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="20dp"
+                        android:textColorHint="#ffffff"
+                        android:textSize="16dp" />
+
+                    <!-- passport -->
+                    <LinearLayout
+                        android:id="@+id/lyric_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5sp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:text="Do you have a valid passport to travel?" />
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5" />
+
+                        <RadioGroup
+                            android:id="@+id/lyric_2radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/lyric_2radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <!-- for lyric -->
+                    <LinearLayout
+                        android:id="@+id/lyric_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5sp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:text="Do you write Lyrics as well?" />
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5" />
+
+                        <RadioGroup
+                            android:id="@+id/lyric_3radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/lyric_3radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/lyric_31"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:background="@drawable/box"
+                        android:ems="10"
+                        android:hint="Names and necessary links?"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="20dp"
+                        android:textColorHint="#ffffff"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <!-- dia_writer -->
+                <LinearLayout
+                    android:id="@+id/dwrite"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!-- previous work -->
+                    <LinearLayout
+                        android:id="@+id/dwrite_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5sp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:text="Have you performed in any feature films / TV shows / Short Films?" />
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5" />
+
+                        <RadioGroup
+                            android:id="@+id/dwrite_1radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/dwrite_1radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/dwrite_11"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:background="@drawable/box"
+                        android:ems="10"
+                        android:hint="Necessary titles and links?"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="20dp"
+                        android:textColorHint="#ffffff"
+                        android:textSize="16dp" />
+
+                    <!-- list of langs -->
+                    <EditText
+                        android:id="@+id/dwrite_2"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:background="@drawable/box"
+                        android:ems="10"
+                        android:hint="List of Languages you have/can written dialogues in?"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="20dp"
+                        android:textColorHint="#ffffff"
+                        android:textSize="16dp" />
+
+                    <!-- passport -->
+                    <LinearLayout
+                        android:id="@+id/dwrite_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5sp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:text="Do you have a valid passport to travel?" />
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5" />
+
+                        <RadioGroup
+                            android:id="@+id/dwrite_3radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/dwrite_3radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <!-- for movie -->
+                    <LinearLayout
+                        android:id="@+id/dwrite_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5sp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:text="Do you write Movie Dialogues as well?" />
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5" />
+
+                        <RadioGroup
+                            android:id="@+id/dwrite_4radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/dwrite_4radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/dwrite_41"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:background="@drawable/box"
+                        android:ems="10"
+                        android:hint="Names and necessary links?"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="20dp"
+                        android:textColorHint="#ffffff"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <!-- screenplay writer -->
+                <LinearLayout
+                    android:id="@+id/screenp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!-- previous work -->
+                    <LinearLayout
+                        android:id="@+id/screenp_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5sp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:text="Have you performed in any feature films / TV shows / Short Films?"
+                            android:paddingLeft="10sp"
+                            android:gravity="center_vertical"
+                            android:layout_weight="6"/>
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent" />
+
+                        <RadioGroup
+                            android:id="@+id/screenp_1radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/screenp_1radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+                    <EditText
+                        android:id="@+id/screenp_11"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="Necessary titles and links?"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+
+                    <!-- list of langs -->
+                    <EditText
+                        android:id="@+id/screenp_2"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="List of Languages you have/can written dialogues in?"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+
+                    <!-- passport -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/screenp_3"
+                        android:layout_marginBottom="5sp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:text="Do you have a valid passport to travel?"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:layout_weight="6"/>
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent" />
+
+                        <RadioGroup
+                            android:id="@+id/screenp_3radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/screenp_3radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <!-- for movie and lyrics -->
+                    <LinearLayout
+                        android:id="@+id/screenp_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5sp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:text="Do you write Movie Dialogues and Lyrics as well?"
+                            android:paddingLeft="10sp"
+                            android:gravity="center_vertical"
+                            android:layout_weight="6"/>
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent" />
+
+                        <RadioGroup
+                            android:id="@+id/screenp_4radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/screenp_4radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+                    <EditText
+                        android:id="@+id/screenp_41"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="Names and necessary links?"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+
+                </LinearLayout>
+
+                <!-- story board artist -->
+                <LinearLayout
+                    android:id="@+id/sba"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!-- previous work -->
+                    <LinearLayout
+                        android:id="@+id/sba_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5sp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:text="Have you performed in any feature films / TV shows / Short Films?"
+                            android:paddingLeft="10sp"
+                            android:gravity="center_vertical"
+                            android:layout_weight="6"/>
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent" />
+
+                        <RadioGroup
+                            android:id="@+id/sba_1radio"
+                            android:layout_width="0sp"
+                            android:layout_weight="3.5"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/sba_1radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"/>
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+                    <EditText
+                        android:id="@+id/sba_11"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="Necessary titles and links?"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+
+                    <!-- sb design (Do you design storyboards on pen and paper or on a computer?) -->
+                    <Spinner
+                        android:id="@+id/sba_2"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="If Yes, what kind"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+
+                    <!-- sb frame -->
+                    <Spinner
+                        android:id="@+id/sba_3"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="If Yes, what kind"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+
+                    <!-- passport -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/sba_4"
+                        android:layout_marginBottom="5sp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:text="Do you have a valid passport to travel?"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:layout_weight="6"/>
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent" />
+
+                        <RadioGroup
+                            android:id="@+id/sba_4radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/sba_4radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- choreograper -->
+                <LinearLayout
+                    android:id="@+id/choreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!-- interested in? -->
+                    <Spinner
+                        android:id="@+id/choreo_1"
+
+                        android:layout_width="match_parent"
+                        android:popupBackground="@drawable/box_spin"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="If Yes, what kind"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+
+                    <!-- own soundtrack -->
+                    <LinearLayout
+                        android:id="@+id/choreo_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5sp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:text="Have you composed your own soundtracks?"
+                            android:paddingLeft="10sp"
+                            android:gravity="center_vertical"
+                            android:layout_weight="6"/>
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent" />
+
+                        <RadioGroup
+                            android:id="@+id/choreo_2radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/choreo_2radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+                    <EditText
+                        android:id="@+id/choreo_21"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="If Yes, upload links to the tracks"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+
+                    <!-- dancing style -->
+                    <Spinner
+                        android:id="@+id/choreo_3"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/box"
+                        android:layout_width="match_parent"
+                        android:textSize="16dp"
+                        android:popupBackground="@drawable/box_spin"
+                        android:layout_gravity="center"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="16sp"
+                        android:layout_marginRight="16sp" />
+
+                    <!-- dance trained -->
+                    <LinearLayout
+                        android:id="@+id/choreo_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5sp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:text="Are you trained / schooled?"
+                            android:paddingLeft="10sp"
+                            android:gravity="center_vertical"
+                            android:layout_weight="6"/>
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent" />
+
+                        <RadioGroup
+                            android:id="@+id/choreo_4radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/choreo_4radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+                    <EditText
+                        android:id="@+id/choreo_41"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="Where and under whom?"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+
+                    <!-- dance performed -->
+                    <LinearLayout
+                        android:id="@+id/choreo_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5sp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:text="Have you performed in any feature films / TV shows / Short Films?"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10sp"
+                            android:layout_weight="6"/>
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent" />
+
+                        <RadioGroup
+                            android:id="@+id/choreo_5radio"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.5"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/choreo_5radioyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:scaleX="0.90"
+                                android:scaleY="0.90"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <Spinner
+                        android:id="@+id/choreo_51"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10sp"
+                        android:popupBackground="@drawable/box_spin"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:background="@drawable/box"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="10dp"
+                        android:textColorHint="#ffffff"
+                        android:textSize="16dp" />
+                    <EditText
+                        android:id="@+id/choreo_52"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="List relevant names / Links"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+
+                    <!-- group size -->
+                    <EditText
+                        android:id="@+id/choreo_6"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="32sp"
+                        android:layout_marginRight="16sp"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="16dp"
+                        android:paddingLeft="20dp"
+                        android:ems="10"
+                        android:hint="How large of a group have you choreographed for ?"
+                        android:textColorHint="#ffffff"
+                        android:background="@drawable/box"
+                        android:inputType="textMultiLine"
+                        />
+
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -177,7 +3555,7 @@
                 android:text="Bio"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:layout_below="@+id/swim"
+                android:layout_below="@+id/questions"
                 android:layout_alignParentLeft="true"
                 android:layout_marginTop="20dp" />
 
@@ -201,7 +3579,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
-                android:text="Previous Experience"
+                android:text="Interested Roles / Characters"
                 android:textStyle="bold"
                 android:layout_below="@+id/editText1"
                 android:layout_alignParentLeft="true"
@@ -240,7 +3618,7 @@
                 android:hint="250 characters only"
                 android:textSize="15sp"
                 android:gravity="top"
-                android:id="@+id/textView5"
+                android:id="@+id/editText3"
                 android:padding="10sp"
                 android:layout_below="@+id/textView4"
                 android:layout_alignParentLeft="true"
@@ -248,24 +3626,35 @@
                 android:maxLength="250"
                 android:inputType="textCapSentences"/>
 
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Relevant Links"
+                android:layout_below="@+id/editText3"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="90sp"
+                android:background="@drawable/box"
+                android:hint="250 characters only"
+                android:textSize="15sp"
+                android:gravity="top"
+                android:id="@+id/editText4"
+                android:padding="10sp"
+                android:layout_below="@+id/textView5"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="60dp"
+                android:maxLength="250"
+                android:inputType="textCapSentences"/>
+
         </RelativeLayout>
     </ScrollView>
-
-
-
-    <!--
-    <ImageButton
-        android:id="@+id/nextpg"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_above="@+id/progress"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="20sp"
-        android:layout_marginBottom="20sp"
-        android:background="@drawable/roundedbutton"
-        android:src="@drawable/arrow_next"
-        android:elevation="10sp"/>
-        -->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -308,7 +3697,10 @@
         android:gravity="center"
         android:layout_gravity="center_horizontal"
         android:text="Next"
-        android:textColor="#000000"
-        android:layout_margin="5dp" />
+        android:textColor="#ffffff"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="5dp" />
 
 </RelativeLayout>

@@ -10,7 +10,7 @@
         android:id="@+id/spin_text"
         android:textColor="#ffffff"
         android:paddingLeft="20dp"
-        android:textSize="18dp"
+        android:textSize="16dp"
         android:layout_height="40dp" />
 
 </LinearLayout>

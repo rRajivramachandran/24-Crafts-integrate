@@ -3,47 +3,61 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:background="@mipmap/wall"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     xmlns:fab="http://schemas.android.com/apk/res-auto"
-    tools:context="com.example.iyashwant.spiderprojectprototype.Login2">
+    tools:context="com.example.iyashwant.spiderprojectprototype.Login2"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:screenOrientation="portrait">
 
-    <ImageView
-        android:layout_width="59dp"
-        android:layout_height="59dp"
-        android:src="@drawable/facebook"
-        android:id="@+id/imageView"
-        android:clickable="true"
-        android:layout_marginBottom="74dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginEnd="16dp"
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    </VideoView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
         android:layout_alignBottom="@+id/material_design_android_floating_action_menu"
-        android:layout_toLeftOf="@+id/material_design_android_floating_action_menu"
-        android:layout_toStartOf="@+id/material_design_android_floating_action_menu" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
-    <ImageView
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/google"
-        android:clickable="true"
-        android:id="@+id/imageView2"
-        android:layout_marginLeft="15dp"
-        android:layout_marginStart="15dp"
-        android:layout_alignBottom="@+id/imageView"
-        android:layout_toRightOf="@+id/imageView"
-        android:layout_toEndOf="@+id/imageView" />
+        <ImageView
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:src="@drawable/facebook"
+            android:id="@+id/imageView"
+            android:clickable="true"
+            android:layout_marginBottom="21dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp" />
 
-    <ImageView
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:clickable="true"
-        android:src="@drawable/insta"
-        android:id="@+id/imageView3"
-        android:layout_marginLeft="19dp"
-        android:layout_alignTop="@+id/imageView2"
-        android:layout_toRightOf="@+id/imageView2"
-        android:layout_toEndOf="@+id/imageView2" />
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/google"
+            android:clickable="true"
+            android:id="@+id/imageView2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp" />
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:clickable="true"
+            android:src="@drawable/insta"
+            android:id="@+id/imageView3"
+            android:layout_marginLeft="19dp" />
+
+    </LinearLayout>
 
 
 
@@ -54,9 +68,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="10dp"
         android:layout_marginLeft="11dp"
-        android:layout_marginRight="3dp"
+        android:layout_marginRight="24sp"
         fab:menu_animationDelayPerItem="55"
         fab:menu_backgroundColor="@android:color/transparent"
         fab:menu_buttonSpacing="0dp"
