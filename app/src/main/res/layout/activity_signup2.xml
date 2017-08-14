@@ -259,10 +259,10 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="25dp"
                 android:ems="10"
-                android:hint="Height"
+                android:hint="Height(in cms)"
                 android:textColorHint="#ffffff"
                 android:background="@drawable/box"
-                android:inputType="textMultiLine"
+                android:inputType="number"
                 />
 
 
@@ -281,10 +281,10 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="25dp"
                 android:ems="10"
-                android:hint="Weight"
+                android:hint="Weight(in kgs)"
                 android:textColorHint="#ffffff"
                 android:background="@drawable/box"
-                android:inputType="text" />
+                android:inputType="number" />
 
 
             <EditText
@@ -301,10 +301,10 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="25dp"
                 android:ems="10"
-                android:hint="Hip Size"
+                android:hint="Hip Size(inches)"
                 android:textColorHint="#ffffff"
                 android:background="@drawable/box"
-                android:inputType="text" />
+                android:inputType="number" />
 
             <EditText
                 android:id="@+id/chest_size"
@@ -320,10 +320,10 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="25dp"
                 android:ems="10"
-                android:hint="Chest Size"
+                android:hint="Chest Size(inches)"
                 android:textColorHint="#ffffff"
                 android:background="@drawable/box"
-                android:inputType="text" />
+                android:inputType="number" />
 
             <EditText
                 android:id="@+id/waist_size"
@@ -340,10 +340,10 @@
                 android:layout_marginTop="25dp"
                 android:layout_marginBottom="60dp"
                 android:ems="10"
-                android:hint="Waist Size"
+                android:hint="Waist Size(inches)"
                 android:textColorHint="#ffffff"
                 android:background="@drawable/box"
-                android:inputType="text" />
+                android:inputType="number" />
 
         </LinearLayout>
     </ScrollView>

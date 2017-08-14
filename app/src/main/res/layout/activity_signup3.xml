@@ -2642,7 +2642,7 @@
                             android:layout_weight="6"
                             android:gravity="center_vertical"
                             android:paddingLeft="10sp"
-                            android:text="Do you write Lyrics as well?" />
+                            android:text="Do you write Dialogues as well?" />
 
                         <Space
                             android:layout_width="0sp"
@@ -2850,7 +2850,7 @@
                             android:layout_weight="6"
                             android:gravity="center_vertical"
                             android:paddingLeft="10sp"
-                            android:text="Do you write Movie Dialogues as well?" />
+                            android:text="Do you write Lyrics as well?" />
 
                         <Space
                             android:layout_width="0sp"
@@ -3630,7 +3630,7 @@
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Relevant Links"
+                android:text="Photo Links"
                 android:layout_below="@+id/editText3"
                 android:textStyle="bold"
                 android:textSize="15sp"
@@ -3641,12 +3641,37 @@
                 android:layout_width="match_parent"
                 android:layout_height="90sp"
                 android:background="@drawable/box"
-                android:hint="250 characters only"
+                android:hint="Photo link"
                 android:textSize="15sp"
                 android:gravity="top"
                 android:id="@+id/editText4"
                 android:padding="10sp"
                 android:layout_below="@+id/textView5"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="60dp"
+                android:maxLength="250"
+                android:inputType="textCapSentences"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Video Links"
+                android:layout_below="@id/editText4"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:id="@+id/textView6"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="90sp"
+                android:background="@drawable/box"
+                android:hint="Video links"
+                android:textSize="15sp"
+                android:gravity="top"
+                android:id="@+id/editText5"
+                android:padding="10sp"
+                android:layout_below="@+id/textView6"
                 android:layout_alignParentLeft="true"
                 android:layout_marginTop="14dp"
                 android:layout_marginBottom="60dp"

@@ -26,6 +26,10 @@ public class signup4 extends AppCompatActivity {
                 startActivity(next);
             }
         });
+
+
+
+
     }
 
     //keyboard disappears when you click outside
@@ -53,6 +57,9 @@ public class signup4 extends AppCompatActivity {
             InputMethodManager imm = (InputMethodManager)activity.getSystemService(Context.INPUT_METHOD_SERVICE);
             imm.hideSoftInputFromWindow(activity.getWindow().getDecorView().getWindowToken(), 0);
         }
+
     }
+
+
 
 }

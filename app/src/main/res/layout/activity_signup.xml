@@ -205,7 +205,7 @@
             android:hint="Residing In"
             android:textColorHint="#ffffff"
             android:background="@drawable/box"
-            android:inputType="number"
+            android:inputType="textMultiLine"
             android:layout_marginLeft="16sp"
             android:layout_marginRight="16sp"/>
 
@@ -226,7 +226,7 @@
             android:hint="Native (Hometown)"
             android:textColorHint="#ffffff"
             android:background="@drawable/box"
-            android:inputType="number" />
+            android:inputType="textMultiLine" />
 
 
         <io.apptik.widget.multiselectspinner.MultiSelectSpinner
@@ -238,6 +238,7 @@
             android:layout_marginRight="16sp"
             android:textSize="16dp"
             android:paddingLeft="20dp"
+            android:hint="Languages Known"
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
             android:background="@drawable/box"/>
@@ -248,6 +249,7 @@
         android:background="@drawable/box"
         android:layout_width="match_parent"
         android:textSize="16dp"
+
         android:layout_marginBottom="50dp"
         android:popupBackground="@drawable/box_spin"
         android:layout_gravity="center"
